@@ -6,11 +6,9 @@ input: `i$0:`input1
 
 input:+" "\'0:`input2
 / input:+" "\'";"\"forward 5;down 5;forward 8;up 3;down 8;forward 2"
-num:`i$ :/input
-dir:"fdu"?*'*input
-1990000~*/+/num*coord:(1 0;0 1;0 -1)dir
-fwd:+\f:num**+coord
-depth:+\f*+\num* :/+coord
-1975421260~*/ :/'(depth;fwd)
+coord:(1 0;0 1;0 -1)"fdu"?*'*input
+1990000~*/+/coord*num:`i$input 1
+c:+coord  / ideally (x;y):+coord
+1975421260~*/+/'(f*+\num**|c;f:num**c)
 
 \\
