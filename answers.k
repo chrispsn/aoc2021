@@ -17,6 +17,9 @@ input=:"1"
 f:~</+/'~\:
 1082324~*/2/'~\:f input
 g:{y&z=x f :'[;y]#z}
-1353024~*/{2/|/input&/(|/')#1 g[x]\+input}'(:;~)
+1353024~*/{2/|/input&/(|/')#1 g[x]\+input}'(:;~)    / little simpler
+1353024~*/2/'{|/{:/(|/')#1 y\+x}[x]'g'(:;~)}#input  / extract filter
+
+
 
 \\
