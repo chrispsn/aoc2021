@@ -13,7 +13,7 @@ c:+coord  / ideally (x;y):+coord
 
 input:0:`input3
 / input:" "\"00100 11110 10110 10111 10101 01111 00111 11100 10000 11001 00010 01010"
-input:input="1"
+input=:"1"
 f:~</+/'~\:
 1082324~*/2/'~\:f input
 g:{y&z=x f :'[;y]#z}
