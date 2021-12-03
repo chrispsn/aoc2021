@@ -16,8 +16,8 @@ input:0:`input3
 input:input="1"
 f:~</+/'~\:
 1082324~*/2/'~\:f input
-a:+/input&/(|/')#{x&y=f y@&x}\++1,+input
-b:+/input&/(|/')#{x&y=~f y@&x}\++1,+input
+a:|/input&/(|/')#1{x&y=f y@&y :'x}\+input
+b:|/input&/(|/')#1{x&y=~f y@&y :'x}\+input
 1353024~*/2/'(a;b)
 
 \\
