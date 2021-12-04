@@ -21,14 +21,13 @@ g:{y&z=x f@&z!y}
 1353024~*/2/'{|/{:/(|/')#1 y\+x}[x]'g'(:;~)}#input  / extract filter
 
 input:0:`input4
-/ input:0:"input4test"
-draws:.*input
+/input:0:"input4test"
+draws:,\.*input
 boards:-5^.((&/" "=,)':)_'(,"")_1_input
 lines:[[]board:(#n)#&(#boards)#5; line:n:,/,/+'\:boards]
-winorder:,/(+`draw!!#draws),/:'{{#'(x#draws)_/:y`line}[x]_lines}'1+!#draws
-score:{(draws x`draw)*+/((1+x`draw)#draws)_,/boards x`board}
+winorder:,/(+`draw!draws),/:'{(#'x_/:{x`line}@)_lines}'draws
+score:{(:/x`draw)*+/(x`draw)_,/boards x`board}
 60368~score@*winorder
 17435~score winorder@|/*'=winorder`board
-
 
 \\
