@@ -25,12 +25,11 @@ input:0:`input4
 draws:`i$","\*input
 nl:,""
 boards:`i$''nl_/:/:" "\''1_'-6^2_nl,input
-lines:+(`board!,/5#/:!#boards), +,/`line!/:'boards
-lines,:+(`board!,/5#/:!#boards), +,/`line!/:'+'boards
-winorder:,/(+`draw!!#draws),/:'{{(0=#'(x#draws)_/:y`line)}[x]#lines}'x:1+!#draws
-win:*winorder
-(draws win`draw)*+/((1+win`draw)#draws)_,/boards win`board
-winlast:winorder@|/*'=winorder`board
-(draws winlast`draw)*+/((1+winlast`draw)#draws)_,/boards winlast`board
+linegen:{+(`board!,/5#/:!#boards), +,/`line!/:'x boards}
+lines:,/linegen'(:;+')
+winorder:,/(+`draw!!#draws),/:'{{(#'(x#draws)_/:y`line)}[x]_lines}'1+!#draws
+score:{(draws x`draw)*+/((1+x`draw)#draws)_,/boards x`board}
+60368~score@*winorder
+17435~score winorder@|/*'=winorder`board
 
 \\
