@@ -22,9 +22,8 @@ g:{y&z=x f@&z!y}
 
 input:0:`input4
 / input:0:"input4test"
-draws:`i$","\*input
-nl:,""
-boards:`i$''nl_/:/:" "\''1_'-6^2_nl,input
+draws:.*input
+boards:.'((&/" "=,)':)_''-5^(,"")_1_input
 linegen:{[[]board:&(#boards)#5; line:,/x boards]}
 lines:,/linegen'(:;+')
 winorder:,/(+`draw!!#draws),/:'{{(#'(x#draws)_/:y`line)}[x]_lines}'1+!#draws
