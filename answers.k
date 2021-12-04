@@ -20,5 +20,17 @@ g:{y&z=x f@&z!y}
 1353024~*/{2/|/input&/(|/')#1 g[x]\+input}'(:;~)    / little simpler
 1353024~*/2/'{|/{:/(|/')#1 y\+x}[x]'g'(:;~)}#input  / extract filter
 
+input:0:`input4
+/ input:0:"input4test"
+draws:`i$","\*input
+nl:,""
+boards:`i$''nl_/:/:" "\''1_'-6^2_nl,input
+lines:+(`board!,/5#/:!#boards), +,/`line!/:'boards
+lines,:+(`board!,/5#/:!#boards), +,/`line!/:'+'boards
+winorder:,/(+`draw!!#draws),/:'{{(0=#'(x#draws)_/:y`line)}[x]#lines}'x:1+!#draws
+win:*winorder
+(draws win`draw)*+/((1+win`draw)#draws)_,/boards win`board
+winlast:winorder@|/*'=winorder`board
+(draws winlast`draw)*+/((1+winlast`draw)#draws)_,/boards winlast`board
 
 \\
