@@ -25,7 +25,7 @@ input:0:`input4
 draws:.*input
 boards:-5^.((&/" "=,)':)_'(,"")_1_input
 lines:[[]board:(#n)#&(#boards)#5; line:n:,/,/+'\:boards]
-winorder:,/(+`draw!!#draws),/:'{{(#'(x#draws)_/:y`line)}[x]_lines}'1+!#draws
+winorder:,/(+`draw!!#draws),/:'{{#'(x#draws)_/:y`line}[x]_lines}'1+!#draws
 score:{(draws x`draw)*+/((1+x`draw)#draws)_,/boards x`board}
 60368~score@*winorder
 17435~score winorder@|/*'=winorder`board
