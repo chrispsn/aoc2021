@@ -33,8 +33,8 @@ score:{(:/x`draw)*+/(x`draw)_,/boards x`board}
 input:0:`input5
 / input:0:"input5test"
 input:.'(" "\'input)@\:0 2
-/ why +/<':~':^`i@ instead of +/1<#'= ?
-/ because k9 2021-10-21 doesn't support grouping on LoL
+/ <':~':^`i@ instead of 1<#'=
+/ as k9 2021-10-21 doesn't group LoL
 f:{delta:--/'x
    dir:-1|1&delta
    moves:(1+|/|/-\:+delta)#','dir
