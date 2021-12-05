@@ -33,15 +33,15 @@ score:{(:/x`draw)*+/(x`draw)_,/boards x`board}
 input:0:`input5
 / input:0:"input5test"
 input:.'(" "\'input)@\:0 2
-/ grphack is there because k9 2021-10-21 doesn't support grouping on LoL...
-/ playing with a workaround like +/1<-':&~':^`i@
+
+/ why +/<':~':^`i@ instead of +/1<#'= ?
+/ because k9 2021-10-21 doesn't support grouping on LoL
 f:{delta:--/'x
    dir:-1|1&delta
    moves:(|/|/-\:+delta)#','dir
-   grphack:(~=':)^^`$" "/'$
-   +/1<#'grphack@,/(,'start),'(start:*'x)+\'moves}
+   +/<':~':^`i@,/(,'start),'(start:*'x)+\'moves}
 7297~f straights:(|/'=/+)#input
 21038~f straights,(=/'|/-\:-/')#input
-
+21038~f input  / if we trust all diags are 45 deg
 
 \\
