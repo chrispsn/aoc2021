@@ -34,7 +34,7 @@ input:0:`input5
 / input:0:"input5test"
 input:.'(" "\'input)@\:0 2
 / <':~':^`i@ instead of 1<#'=
-/ as k9 2021-10-21 doesn't group LoL
+/ as k9 2021-10-21 doesn't group some nested data
 f:{delta:--/'x
    dir:-1|1&delta
    moves:(1+|/|/-\:+delta)#','dir
