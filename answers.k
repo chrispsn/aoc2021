@@ -38,8 +38,8 @@ input:.'(" "\'input)@\:0 2
 / because k9 2021-10-21 doesn't support grouping on LoL
 f:{delta:--/'x
    dir:-1|1&delta
-   moves:(|/|/-\:+delta)#','dir
-   +/<':~':^`i@,/(,'start),'(start:*'x)+\'moves}
+   moves:(1+|/|/-\:+delta)#','dir
+   +/<':~':^`i@,/((-dir)+*'x)+\'moves}
 7297~f straights:(|/'=/+)#input
 21038~f straights,(=/'|/-\:-/')#input
 21038~f input  / if we trust all diags are 45 deg
