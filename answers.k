@@ -33,12 +33,14 @@ score:{(:/x`draw)*+/(x`draw)_,/boards x`board}
 input:0:`input5
 / input:0:"input5test"
 input:.'(" "\'input)@\:0 2
-/ <':~':^`i@ instead of 1<#'=
-/ as k9 2021-10-21 doesn't group some nested data
+/ +/<':~':^`i@ instead of +/1<#'=
+/ as k9 2021-10-21 doesn't group on LoL
+/ also could try something like +/1<+/paths!\:1}
 f:{delta:--/'x
    dir:-1|1&delta
    moves:(1+|/|/-\:+delta)#','dir
-   +/<':~':^`i@,/((-dir)+*'x)+\'moves}
+   paths:((*'x)-dir)+\'moves
+   +/<':~':^`i@,/paths}
 7297~f (|/'=/+)#input
 21038~f input
 
