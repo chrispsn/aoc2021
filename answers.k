@@ -44,5 +44,18 @@ f:{delta:--/'x
 7297~f (|/'=/+)#input
 21038~f input
 
+input:*0:`input6
+/ input:*0:"input6test"
+input:#'=`i$","\input
+lf:{(6 8!x 0)+(,-1)_!/(-1+;)@'. x}
+351092~+/(80;lf)/:input
+1595330616005~+/(256;lf)/:input
+
+input:*0:`input7
+/ input:"16,1,2,0,4,2,7,1,2,14"
+input:`i$","\input
+f:{_x*(x+1)%2}
+(340052;92948968)={*(=/&/\:)#+/x@|/-\:input-\:input}'(:;f)
+
 
 \\
