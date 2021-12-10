@@ -67,7 +67,7 @@ input:("2199943210"
 input:0:`input9
 input:`i$''input  / ideally input-:"0"
 rot:{(x;+|)/:y}
-lows:input<&/(4-!4)rot'10 :':'(!4)rot\:input
+lows:input<&/(4-!4)rot'9 :':'(!4)rot\:input
 417~+/+/lows*1+input   / deep where?
 
 lowlocs:&,/lows
