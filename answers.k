@@ -73,8 +73,8 @@ lows:input<&/shifts[9]input
 lowlocs:&,/lows
 lowcount:#lowlocs
 tops:lowcount*9=input
-regions:(#input)^@[,/tops;lowlocs;:;!lowcount]
+enumeratedlows:(#input)^@[,/tops;lowlocs;:;!lowcount]
 flood:{x|/shifts[0]x*~tops}
-1148965~*/-3#^!?-1_#'=,/flood/:regions
+1148965~*/-3#^!?-1_#'=,/flood/:enumeratedlows
 
 \\
