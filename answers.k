@@ -66,15 +66,15 @@ input:("2199943210"
        "9899965678")
 input:0:`input9
 input:`i$''input  / ideally input-:"0"
-rot:{(x;+|)/:y}
-shift:{(4-!4)rot'x :':'(!4)rot\:}
-lows:input<&/shift[9]@input
+rotate:{(x;+|)/:y}
+shifts:{[fill] (4-!4) rotate' fill:':'(!4)rotate\:}
+lows:input<&/shifts[9]input
 417~+/+/lows*1+input   / deep where?
 lowlocs:&,/lows
 lowcount:#lowlocs
 tops:lowcount*9=input
-lows:(#input)^@[,/tops;lowlocs;:;!lowcount]
-flood:{x|/shift[0]x*~tops}
-1148965~*/-3#^!?-1_#'=,/flood/:lows
+regions:(#input)^@[,/tops;lowlocs;:;!lowcount]
+flood:{x|/shifts[0]x*~tops}
+1148965~*/-3#^!?-1_#'=,/flood/:regions
 
 \\
