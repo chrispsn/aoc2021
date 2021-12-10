@@ -70,17 +70,6 @@ rot:{(x;+|)/:y}
 lows:input<&/(4-!4)rot'10 :':'(!4)rot\:input
 417~+/+/lows*1+input   / deep where?
 
-input:("2199943210"
-       "3987894921"
-       "9856789892"
-       "8767896789"
-       "9899965678")
-input:0:`input9
-input:`i$''input  / ideally input-:"0"
-rot:{(x;+|)/:y}
-lows:input<&/(4-!4)rot'10 :':'(!4)rot\:input
-417~+/+/lows*1+input   / deep where?
-
 lowlocs:&,/lows
 lowcount:#lowlocs
 tops:lowcount*9=input
