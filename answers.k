@@ -57,5 +57,20 @@ input:`i$","\input
 f:{_x*(x+1)%2}  / {div x*x+1}, ideally
 (340052;92948968)={&/+/x@|/-\:input-\:input}'(:;f)
 
+/ Problem 8 TBA
+
+input:("2199943210"
+       "3987894921"
+       "9856789892"
+       "8767896789"
+       "9899965678")
+input:0:`input9
+input:`i$''input  / ideally input-:"0"
+rot:{(x;+|)/:y}
+lows:input<&/(1+|!4)rot'10 :':'(!4)rot\:input
+417~+/+/lows*1+input   / deep where?
+
+/ working on 9.2
+
 
 \\
